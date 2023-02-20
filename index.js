@@ -18,7 +18,25 @@ if (classGroup == 'Science Subjects') {
 
 
 
-// QUESTION 5
+// // QUESTION 5
+// const sum = 80
 
+function pwrofTwo(num){
+    let base = 1;
+    if(num < 0){
+        num *= -1;
+     }
+
+     while(base < num){
+        if(num - base < Math.floor(base / 2)){
+           return base;
+        };
+        base *= 2;
+     };
+
+     console.log('The number ' + num + ' is the power of 2 nearest ' + base);
+
+}
+pwrofTwo(120);
 
 
